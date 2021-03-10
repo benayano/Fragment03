@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentText">
+
+    <TextView
+        android:id="@+id/text_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="25sp"
+        android:text="this text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/name_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="25sp"
+        android:text="this name"
+        app:layout_constraintStart_toStartOf="@+id/text_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/text_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/text_fragment"
+        />
+    <TextView
+        android:id="@+id/phone_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="25sp"
+        android:text="this phone"
+        app:layout_constraintStart_toStartOf="@+id/text_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/text_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/name_fragment"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
